@@ -12,6 +12,13 @@ fun ByteArray.toCharSequence(encoding: CharacterEncoding): CharSequence = when (
 }
 
 /**
+ * Returns a character array from the specified character encoding.
+ */
+fun ByteArray.toCharArray(encoding: CharacterEncoding): CharArray {
+    return toCharSequence(encoding).toCharArray()
+}
+
+/**
  * Returns a [CharArray] containing characters of this sequence.
  */
 fun CharSequence.toCharArray(): CharArray = CharArray(length) { i -> this[i] }
