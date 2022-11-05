@@ -33,5 +33,5 @@ class Latin1CharSequence private constructor(
         else -> Latin1CharSequence(data, offset + startIndex, endIndex - startIndex)
     }
 
-    override fun toString(): String = CharArray(length) { i -> this[i] }.concatToString()
+    override fun toString(): String = toCharArray().concatToString()
 }
