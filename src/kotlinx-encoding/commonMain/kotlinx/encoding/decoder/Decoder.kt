@@ -4,6 +4,14 @@ package kotlinx.encoding.decoder
 import kotlinx.encoding.CharacterEncoding
 
 /**
+ * Returns a character sequence over the byte array for the specified encoding.
+ */
+fun ByteArray.toCharSequence(encoding: CharacterEncoding): CharSequence = when (encoding) {
+    CharacterEncoding.ISO_8859_1 -> Latin1CharSequence(this)
+    CharacterEncoding.US_ASCII -> Latin1CharSequence(this)
+}
+
+/**
  * Returns a [CharArray] containing characters of this sequence.
  */
 fun CharSequence.toCharArray(): CharArray = CharArray(length) { i -> this[i] }
