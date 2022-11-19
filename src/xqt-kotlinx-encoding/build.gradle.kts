@@ -3,7 +3,7 @@ plugins {
     id("maven-publish")
 }
 
-group = "kotlinx-encoding"
+group = "xqt-kotlinx"
 version = "0.1-SNAPSHOT"
 
 kotlin {
