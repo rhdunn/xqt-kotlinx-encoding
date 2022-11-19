@@ -1,7 +1,7 @@
 // Copyright (C) 2022 Reece H. Dunn. SPDX-License-Identifier: Apache-2.0
-package kotlinx.encoding.test.decoder
+package xqt.kotlinx.encoding.test.decoder
 
-import kotlinx.encoding.decoder.Latin1CharSequence
+import xqt.kotlinx.encoding.decoder.Latin1CharSequence
 import xqt.kotlinx.test.DisplayName
 import kotlin.test.Test
 import kotlin.test.assertEquals
