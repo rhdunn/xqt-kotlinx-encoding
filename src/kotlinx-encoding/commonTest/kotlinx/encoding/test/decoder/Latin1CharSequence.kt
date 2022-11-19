@@ -2,7 +2,7 @@
 package kotlinx.encoding.test.decoder
 
 import kotlinx.encoding.decoder.Latin1CharSequence
-import kotlinx.test.DisplayName
+import xqt.kotlinx.test.DisplayName
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
